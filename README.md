@@ -36,11 +36,11 @@ pip install nanda-adapter
 
 ### 3. Configure your Domain and SSL Certificates (move certificates into current path)
 
-> sudo certbot certonly --standalone -d <YOUR_DOMAIN_NAME.COM>
+> sudo certbot certonly --standalone -d <agenthw2.sitescopeai.com>
 
-> sudo cp -L /etc/letsencrypt/live/<YOUR_DOMAIN_NAME.COM>/fullchain.pem .
+> sudo cp -L /etc/letsencrypt/live/<agenthw2.sitescopeai.com>/fullchain.pem .
 
-> sudo cp -L /etc/letsencrypt/live/<YOUR_DOMAIN_NAME.COM>/privkey.pem .
+> sudo cp -L /etc/letsencrypt/live/<agenthw2.sitescopeai.com>/privkey.pem .
 
 > sudo chown $USER:$USER fullchain.pem privkey.pem
 
@@ -50,7 +50,7 @@ pip install nanda-adapter
 
 > export ANTHROPIC_API_KEY="your-api-key-here
 
-> export DOMAIN_NAME="<YOUR_DOMAIN_NAME.COM>
+> export DOMAIN_NAME="<agenthw2.sitescopeai.com>
 
 ### 5. Run an example agent (langchain_pirate.py)
 > nohup python3 langchain_pirate.py > out.log 2>&1 &
